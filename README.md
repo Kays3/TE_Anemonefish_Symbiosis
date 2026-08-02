@@ -2,10 +2,12 @@
 
 ## Status
 
-Early-stage / idea repository. There is no data, no confirmed genomic
-resources, and no analysis yet — this repo exists to hold the hypothesis,
-the source literature it's built on, and the planned pipeline so the project
-has a home before any wet-lab or dry-lab work starts. Structured after
+Early-stage / idea repository. No sequence data have been downloaded and no
+analysis has run. A public-resource audit completed on 2026-08-02 found
+chromosome-level clownfish genomes but no chromosome-level nuclear assembly
+for any natural host sea anemone. This repo therefore records both the
+biological hypotheses and the explicit resource gate that must be resolved
+before a strict chromosome-to-chromosome comparison can begin. Structured after
 [`TE_Ocean_Acidification`](https://github.com/Kays3/TE_Ocean_Acidification),
 an active project studying transposable elements in coral reef fish under
 ocean acidification, reusing the parts of that project's organization that
@@ -28,6 +30,12 @@ plausible active transposons rather than decayed fossils. See
 [`research-ideas/anemonefish-anemone-te-hgt.md`](research-ideas/anemonefish-anemone-te-hgt.md)
 for the full summary and how it maps onto this project's hypothesis.
 
+A complementary bioinformatics-only idea asks whether the two partners contain
+related endogenous viral elements (EVEs), while using “CRISPR-like” only as an
+analogy for sequence-derived immune memory rather than claiming that animals
+possess a CRISPR system. See
+[`research-ideas/endogenous-viral-elements-crispr-like-screen.md`](research-ideas/endogenous-viral-elements-crispr-like-screen.md).
+
 **Hypothesis:** anemonefish (*Amphiprion* spp.) live in sustained, intimate
 mucus and tissue contact with a single host sea anemone for essentially their
 whole adult life — a longer and closer physical relationship than a
@@ -38,18 +46,25 @@ literature review has found.
 
 ## Repository layout
 
-- [`research-ideas/`](research-ideas/) — the source paper this project is
-  modeled on, and the idea note that adapts its approach to the
-  anemonefish/anemone system.
-- [`docs/`](docs/) — supporting background: a closer read of the source
-  paper's method, and an honest inventory of what genomic/transcriptomic
-  resources actually exist for candidate anemonefish and host anemone
-  species (this is the main open question before any real design work).
+- [`research-ideas/`](research-ideas/) — the source paper, the TE-horizontal-
+  transfer concept, and the bioinformatics-only EVE/CRISPR-like screen.
+- [`docs/`](docs/) — supporting background, method notes, and the
+  accession-level genome audit that defines the current go/no-go decision.
 - [`workflow/`](workflow/) — the planned analysis pipeline, written up in
   prose since there's no data yet to build real scripts against. Once real
   sequence data is in hand, this should grow the same way
   `TE_Ocean_Acidification/workflow/` did: config file, executable scripts,
   and a run order.
+
+## Current resource constraint
+
+The strict requirement that both symbiotic partners have chromosome-level
+genomes currently fails: all ten recognized host-anemone species were checked
+against NCBI Assembly, and none has a chromosome-level nuclear assembly. The
+project can either wait for such an assembly or explicitly accept a contig-level
+HiFi host assembly and limit claims accordingly. See
+[`docs/candidate-species-and-resources.md`](docs/candidate-species-and-resources.md)
+for accessions and the decision rule.
 
 ## License
 

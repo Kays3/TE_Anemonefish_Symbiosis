@@ -1,9 +1,9 @@
 # Planned workflow (prose only — no data yet)
 
-This documents the pipeline this project *would* run once
-`docs/candidate-species-and-resources.md`'s open question is resolved (i.e.
-once there's a confirmed anemonefish/host-anemone pairing with usable
-sequence data). Nothing here is executable yet; there is deliberately no
+This documents the pipeline this project *would* run. The 2026-08-02 resource
+audit established that no natural anemonefish/host-anemone pairing currently
+has chromosome-level nuclear assemblies for both partners. Nothing here is
+executable yet; there is deliberately no
 `config.example.env` or script stub, because pinning down an interface before
 the input data situation is known would just mean rewriting it later. This
 should grow the same way `TE_Ocean_Acidification/workflow/` did: once real
@@ -48,6 +48,36 @@ and a `Run order` section like that repo has.
    contamination-control design — see
    `docs/source-paper-method-notes.md` for why the source paper's ITS1-2
    control doesn't transfer directly.
+
+## Alternative: bioinformatics-only EVE screen
+
+The EVE/“CRISPR-like” idea is a separate analysis route, not an extension of
+the targeted Tc1/mariner BLAST alone. Its planned stages are:
+
+1. annotate repeats independently in each genome;
+2. screen genomic sequence and predicted proteins against curated viral
+   references such as RVDB using translated similarity searches and viral-
+   profile HMMs;
+3. merge overlapping calls while preserving the evidence from each detector;
+4. remove cellular homologs, common repeats, assembly contamination, and
+   low-complexity matches;
+5. require host sequence on both sides of each high-priority viral-like
+   insertion;
+6. where raw long reads are public, validate both host–virus junctions and
+   local coverage;
+7. cluster candidate EVEs across partners, non-symbiotic relatives, and viral
+   references;
+8. infer gene and species-aware phylogenies for supported families; and
+9. report orthology, shared viral ancestry, and candidate recent similarity as
+   separate evidence tiers.
+
+This route can catalogue candidate EVEs with a contig-level host-anemone
+assembly, but it cannot prove direct transfer, transfer direction, expression,
+antiviral activity, or a CRISPR mechanism from genome sequence alone. The full
+claim ladder and accession audit are in
+[`../research-ideas/endogenous-viral-elements-crispr-like-screen.md`](../research-ideas/endogenous-viral-elements-crispr-like-screen.md)
+and
+[`../docs/candidate-species-and-resources.md`](../docs/candidate-species-and-resources.md).
 
 ## Environment
 
