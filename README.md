@@ -4,6 +4,10 @@
 
 *Artwork reused from [Kaisar's research website](https://kays3.github.io/). AI-generated illustration, not a scientific result.*
 
+![A clownfish beside a sea anemone, with pieces of DNA and golden algae drifting between them](assets/impression.svg)
+
+*Artistic impression, AI-drawn as an SVG that opens and edits in Inkscape. It is an illustration and reports no result. More on [Kaisar's research website](https://kays3.github.io/).*
+
 ## Status
 
 Early-stage / idea repository. No sequence data have been downloaded and no
