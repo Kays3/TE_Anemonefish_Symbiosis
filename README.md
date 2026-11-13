@@ -79,3 +79,7 @@ for accessions and the decision rule.
 MIT license.
 
 **Author:** Kaisar Dauyey
+
+## Research website and related projects
+
+[Explore the reef and symbiosis gallery on Kaisar's website](https://kays3.github.io/interests/#marine-genomics). The related [Entacmaea research notebook](https://github.com/Kays3/entacmea-research) covers anemone host and symbiont transcriptomes. [Reef fish and ocean acidification](https://github.com/Kays3/TE_Ocean_Acidification_Evidence) is a separate project. These links provide context; they do not establish horizontal transfer.
