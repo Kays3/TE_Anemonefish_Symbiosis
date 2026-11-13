@@ -1,5 +1,9 @@
 # Transposable element horizontal transfer between anemonefish and their host sea anemone
 
+![Illustration of a clownfish in a bubble-tip anemone with a magnified view of symbiont algae and a DNA strand](assets/banner.webp)
+
+*Artwork reused from [Kaisar's research website](https://kays3.github.io/). AI-generated illustration, not a scientific result.*
+
 ## Status
 
 Early-stage / idea repository. No sequence data have been downloaded and no
@@ -8,7 +12,7 @@ chromosome-level clownfish genomes but no chromosome-level nuclear assembly
 for any natural host sea anemone. This repo therefore records both the
 biological hypotheses and the explicit resource gate that must be resolved
 before a strict chromosome-to-chromosome comparison can begin. Structured after
-[`TE_Ocean_Acidification`](https://github.com/Kays3/TE_Ocean_Acidification),
+`TE_Ocean_Acidification` (private; public companion: [`TE_Ocean_Acidification_Evidence`](https://github.com/Kays3/TE_Ocean_Acidification_Evidence)),
 an active project studying transposable elements in coral reef fish under
 ocean acidification, reusing the parts of that project's organization that
 made sense here (separate `workflow/` docs for the pipeline, `docs/` for
